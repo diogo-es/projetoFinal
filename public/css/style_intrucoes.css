@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #222831;
+    color: #ffffff;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.instruction-content {
+    text-align: justify;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .instruction-content {
+    background-color: #393e46;
+    color: #eeeeee;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333333;
+    color: #ffffff;
+    width: 100%;
+}
+
+body.light-mode footer {
+    background-color: rgba(162, 162, 162, 0.31);
+    color: #000000;
+}
+
